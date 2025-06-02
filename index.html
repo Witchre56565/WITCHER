@@ -162,7 +162,7 @@
     <script>
         function fetchIPAndInfo() {
             fetch('https://api.ipify.org/?format=json')
-                .then(response => response.json_ci)
+                .then(response => response.json())
                 .then(data => {
                     document.getElementById('ip-address-value').textContent = data.ip;
                     return data.ip;
